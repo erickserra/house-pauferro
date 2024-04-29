@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Vende-se imóvel na pau-ferro</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <script src="./fslightbox.js"></script>
+  <style>
+    * {
+      font-family: "Manrope", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-weight: 500;
+    }
+
+    .title::before {
+      content: " ";
+      display: inline-block;
+      width: 30px;
+      height: 0.2rem;
+      position: relative;
+      bottom: 5px;
+      margin-right: 8px;
+      background-color: rgb(30, 41, 59);
+    }
+  </style>
+</head>
+
+<body>
+  <header class="w-full px-4 py-4 md:h-[120px] bg-slate-800 sticky top-0 z-[50]">
+    <div class="max-w-[100%] md:max-w-[95%] h-full md:mx-auto flex items-center justify-between xs:gap-0 md:gap-12">
+      <p class="font-semibold text-[1.5rem] md:text-[2.5rem] text-white">
+        Vende-se este imóvel
+      </p>
+      <button id="whatsapp" onclick="openWhatsapp()"
+        class="rounded-full md:rounded-md bg-green-600 h-10 w-10 md:w-auto md:h-auto text-white text-[1.5rem] md:px-6 md:py-4 flex justify-center items-center md:gap-4 active:brightness-110 outline outline-1 active:outline active:outline-4 outline-green-600 outline-offset-4">
+        <span class="hidden md:inline-block">Entrar em contato</span>
+        <i class="fab fa-whatsapp"></i>
+      </button>
+    </div>
+  </header>
+  <main class="bg-white w-full">
+    <div class="max-w-[100%]">
+      <section class="w-full flex md:bg-red-500 md:min-h-[calc(100vh-120px)] h-auto max-md:flex-col">
+        <div class="px-4 bg-slate-200 md:w-[45%] md:pt-[80px]">
+          <h2
+            class="text-slate-800 max-md:py-8 text-left text-[2.5rem] md:text-[8rem] font-semibold leading-[3rem] md:leading-[8rem] w-auto">
+            Casa de 563m² com 4 suítes, 6 banheiros e 5 vagas.
+          </h2>
+        </div>
+        <div class="md:bg-slate-800 md:pl-4 md:w-[60%] relative">
+          <img src="assets/images/quintal-frente-6.jpeg" class="w-full h-full object-cover" />
+
+          <div class="mt-4 flex flex-col md:flex-row gap-4 md:gap-[2rem] justify-center md:justify-normal absolute bottom-[0px] md:bg-slate-800 px-10 py-8 w-[100%]">
+            <button id="whatsapp" onclick="openWhatsapp()"
+              class="rounded-md bg-green-600 text-white text-[1.5rem] px-6 py-4 flex gap-4 items-center active:brightness-110 outline outline-1 active:outline-4 outline-green-600 outline-offset-4">
+              Entrar em contato
+              <i class="fab fa-whatsapp"></i>
+            </button>
+            <button id="whatsapp" onclick="openGallery()"
+              class="rounded-md bg-blue-800 text-white text-[1.5rem] px-6 py-4 flex gap-4 items-center active:brightness-110 outline outline-1 active:outline-4 outline-blue-800 outline-offset-4">
+              Ver todas as fotos
+              <i class="fas fa-images"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="bg-slate-100 md:bg-transparent w-[100%] mt-4 mb-4 py-4 px-4 max-md:border-b-2 border-slate-800 md:flex md:items-center md:justify-center md:mt-[4rem]">
+          <h2 class="max-md:title font-semibold text-[1.5rem] md:text-[4rem] max-md:text-slate-900 md:text-white md:px-6 md:bg-slate-800 md:rounded-lg">
+            Descrição
+          </h2>
+        </div>
+        <p class="text-xl px-4 text-slate-700 md:mx-auto md:max-w-[60%] md:mt-10 md:text-[1.6rem] leading-[1.5]">
+          Descubra esta casa espaçosa e elegante, localizada na Estrada do Pau-ferro, no bairro Freguesia, Jacarepaguá, Rio de Janeiro. Com quatro quartos, todos suítes, e um total de seis banheiros, oferece o conforto ideal para famílias. Equipada com tudo o que você precisa, esta casa é perfeita para quem valoriza comodidade. Sua localização central coloca você perto de escolas, serviços de saúde e áreas de lazer. Além de ser uma excelente escolha para moradia, esta propriedade também oferece uma oportunidade única para empreendedores. <br /> <br /> Sua localização estratégica, próxima a pontos importantes como escolas, serviços de saúde e áreas de lazer, a torna ideal para quem deseja utilizar o terreno para iniciar um negócio. Seja para estabelecer um espaço comercial, escritório ou qualquer outra atividade empreendedora, este imóvel oferece uma base sólida para transformar suas ideias em realidade.
+        </p>
+      </section>
+
+      <section>
+        <div class="bg-slate-100 md:bg-transparent w-[100%] mt-4 md:mb-12 py-4 px-4 max-md:border-b-2 border-slate-800 md:flex md:items-center md:justify-center md:mt-[4rem]">
+          <h2 class="max-md:title font-semibold text-[1.5rem] md:text-[4rem] max-md:text-slate-900 md:text-white md:px-6 md:bg-slate-800 md:rounded-lg">
+            Outras Informações
+          </h2>
+        </div>
+        <div class="max-md:hidden md:flex text-slate-700 items-center gap-[46px] justify-center">
+          <div class="flex gap-4 items-center text-[1.2rem] pb-[5px]">
+            <img src="assets/icons/icons8-sofa-50.png" class="w-[70px]" />
+            <span> Sem Mobília </span>
+          </div>
+          <div class="flex gap-4 items-center text-[1.2rem] pb-[5px]">
+            <img src="assets/icons/icons8-car-50.png" class="w-[70px]" />
+            <span> 5 Vagas de garagem </span>
+          </div>
+          <div class="flex gap-4 items-center text-[1.2rem] pb-[5px]">
+            <img src="assets/icons/icons8-ruler-50.png" class="w-[70px]" />
+            <span> 563 m² (R$ 2.895/m²) </span>
+          </div>
+          <div class="flex gap-4 items-center text-[1.2rem] pb-[5px]">
+            <img src="assets/icons/icons8-money-48.png" class="w-[70px]" />
+            <span class="text-slate-800 font-bold"> R$ 1.630.000,00 </span>
+          </div>
+        </div>
+        <div class="max-md:flex md:hidden flex-col gap-4 p-4 text-slate-700">
+          <div class="flex gap-4 items-center text-[1.2rem] pb-[5px]">
+            <img src="assets/icons/icons8-bed-50.png" class="w-[40px]" />
+            <span> 4 Quartos (suítes) </span>
+          </div>
+          <div class="flex gap-4 border-b-2 items-center text-[1.1rem] pb-[5px]">
+            <img src="assets/icons/icons8-bath-64.png" class="w-[40px]" />
+            <span> 6 Banheiros </span>
+          </div>
+          <div class="flex gap-4 border-b-2 items-center text-[1.1rem] pb-[5px]">
+            <img src="assets/icons/icons8-sofa-50.png" class="w-[40px]" />
+            <span> Sem Mobília </span>
+          </div>
+          <div class="flex gap-4 border-b-2 items-center text-[1.1rem] pb-[5px]">
+            <img src="assets/icons/icons8-car-50.png" class="w-[40px]" />
+            <span> 5 Vagas de garagem </span>
+          </div>
+          <div class="flex gap-4 border-b-2 items-center text-[1.1rem] pb-[5px]">
+            <img src="assets/icons/icons8-ruler-50.png" class="w-[40px]" />
+            <span> 563 m² (R$ 2.895/m²) </span>
+          </div>
+          <div class="flex gap-4 border-b-2 items-center text-[1.1rem] pb-[5px]">
+            <img src="assets/icons/icons8-money-48.png" class="w-[40px]" />
+            <span class="text-slate-800 font-bold"> R$ 1.630.000,00 </span>
+          </div>
+        </div>
+
+        <div class="w-full md:mt-12 flex items-center justify-center">
+          <button id="whatsapp" onclick="openWhatsapp()"
+            class="rounded-md bg-green-600 text-white text-[1.5rem] px-6 py-4 flex gap-4 items-center active:brightness-110 active:outline outline-2 outline-green-600 outline-offset-4">
+            Agendar uma visita
+            <i class="fab fa-whatsapp"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="md:mx-auto md:max-w-[80%]">
+        <div class="bg-slate-100 md:bg-transparent w-[100%] mt-4 md:mb-12 py-4 px-4 max-md:border-b-2 border-slate-800 md:flex md:items-center md:justify-center md:mt-[4rem]">
+          <h2 class="max-md:title font-semibold text-[1.5rem] md:text-[4rem] max-md:text-slate-900 md:text-white md:px-12 md:bg-slate-800 md:rounded-lg">
+            Galeria
+          </h2>
+        </div>
+        <div class="grid grid-cols-3 gap-1 bg-slate-900 px-[2px]">
+          <img src="assets/images/quintal-frente-6.jpeg" alt="Quintal Frente" class="w-full object-cover" />
+          <img src="assets/images/quintal-frente-7.jpeg" alt="Quintal Frente" class="w-full object-cover" />
+          <img src="assets/images/quintal-frente-9.jpeg" alt="Quintal Frente" class="w-full object-cover" />
+          <img src="assets/images/quintal-frente-2.jpeg" alt="Quintal Frente" class="w-full object-cover" />
+          <img src="assets/images/quintal-frente-6.jpeg" alt="Quintal Frente" class="w-full object-cover" />
+          <img src="assets/images/quintal-frente-2.jpeg" alt="Quintal Frente" class="w-full object-cover" />
+        </div>
+        <div class="p-4">
+          <button id="whatsapp" onclick="openGallery()"
+            class="mx-auto rounded-md bg-slate-800 text-white text-[1.5rem] px-6 py-4 flex gap-4 items-center active:brightness-110 active:outline outline-2 outline-slate-800 outline-offset-4">
+            Ver todas as fotos
+            <i class="fas fa-images"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="pb-12 md:mt-[100px] md:flex md:flex-col md:items-center">
+        <div class="max-md:bg-slate-100 w-[100%] mb-4 py-4 px-4 max-md:border-b-2 border-slate-800 md:flex md:justify-center">
+          <h2 class="max-md:title font-semibold text-[1.5rem] md:text-[4rem] max-md:text-slate-900 md:text-white md:px-6 md:bg-slate-800 md:rounded-lg">
+            Localização
+          </h2>
+        </div>
+        <div class="flex flex-col gap-4 p-4 text-slate-700 pb-8">
+          <div class="flex gap-4 items-center text-[1.1rem]">
+            <img src="assets/icons/icons8-address-48.png" class="w-[40px]" />
+            <span>
+              Estrada do Pau-Ferro, 895 <br />
+              Freguesia - Jacarépaguá <br />
+            </span>
+          </div>
+          <div class="flex gap-4 items-center text-[1.1rem]">
+            <img src="assets/icons/icons8-city-block-50.png" class="w-[40px]" />
+            <span>
+              Próximo de escolas, hospitais, <br />
+              supermercados, shoppings e restaurantes.
+            </span>
+          </div>
+        </div>
+
+        <div class="w-full mt-4 flex items-center justify-center">
+          <button id="whatsapp" onclick="openMap()"
+            class="rounded-md bg-slate-600 text-white text-[1.5rem] px-6 py-4 flex gap-4 items-center active:brightness-110 active:outline outline-2 outline-slate-600 outline-offset-4">
+            Abrir no Google Maps
+          </button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="w-full bg-slate-800 py-8 px-4">
+    <h2 class="text-white text-lg text-center md:text-[1.5rem]">Agende sua visita</h2>
+    <p class="text-white text-md md:text-[1.3rem] text-center mt-4">
+      Whatsapp: (+351) 927 795 148
+    </p>
+    <p class="text-white text-md md:text-[1.3rem] text-center mt-2 mb-4">ou</p>
+    <button id="whatsapp" onclick="openWhatsapp()"
+      class="rounded-md mx-auto bg-green-600 text-white text-[1.5rem] px-6 py-4 flex gap-4 items-center active:brightness-110 outline outline-1 active:outline-4 outline-green-600 outline-offset-4">
+      Entrar em contato
+      <i class="fab fa-whatsapp"></i>
+    </button>
+  </footer>
+
+  <script>
+    const imagePath = "/assets/images/";
+    const imageNames = [
+      "quintal-frente-5.jpeg",
+      "quintal-frente-6.jpeg",
+      "quintal-frente-7.jpeg",
+      "quintal-frente-9.jpeg",
+      "quintal-frente-1.jpeg",
+      "quintal-frente-2.jpeg",
+      "quintal-frente-3.jpeg",
+      "quintal-frente-4.jpeg",
+      "sala-1.jpeg",
+      "sala-2.jpeg",
+      "sala-3.jpeg",
+      "sala-4.jpeg",
+      "sala-5.jpeg",
+      "sala-6.jpeg",
+      "sala-7.jpeg",
+      "sala-8.jpeg",
+      "sala-9.jpeg",
+      "sala-11.jpeg",
+      "sala-12.jpeg",
+      "quarto-1-banheiro.jpeg",
+      "quarto-1-closet.jpeg",
+      "quarto-2-01.jpeg",
+      "quarto-2-02.jpeg",
+      "quarto-2-03.jpeg",
+      "quarto-2-04.jpeg",
+      "quarto-2-05.jpeg",
+      "quarto-2-06.jpeg",
+      "quarto-3-01.jpeg",
+      "quarto-3-03.jpeg",
+      "quintal-1.jpeg",
+      "quintal-2.jpeg",
+      "quintal-3.jpeg",
+      "quintal-4.jpeg",
+      "quintal-5.jpeg",
+      "piscina-7.jpeg",
+      "piscina-6.jpeg",
+      "piscina-5.jpeg",
+      "corredor-lateral.jpeg",
+      "churrasqueira-1.jpeg",
+      "churrasqueira-2.jpeg",
+      "churrasqueira-3.jpeg",
+    ];
+
+    function preloadImages() {
+      for (var i = 0; i < imageNames.length; i++) {
+        const img = new Image();
+        img.src = imagePath + imageNames[1];
+      }
+    }
+
+    function openGallery() {
+      const lightbox = new FsLightbox();
+      lightbox.props.sources = imageNames.map((image) => imagePath + image);
+      lightbox.open();
+    }
+
+    function isMobile() {
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      ) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+
+    function openWhatsapp() {
+      if (isMobile()) {
+        window.open("https://wa.me/351927795148");
+      } else {
+        window.open("https://wa.me/351927795148", "_blank");
+      }
+    }
+
+    function openMap() {
+      if (isMobile()) {
+        window.open(
+          "https://www.google.com/maps/@-22.9283488,-43.3349405,3a,90y,349.23h,89.5t/data=!3m6!1e1!3m4!1sJcxdZFAXaMwo0HD7_DGIrw!2e0!7i16384!8i8192?entry=ttu"
+        );
+      } else {
+        window.open(
+          "https://www.google.com/maps/@-22.9283488,-43.3349405,3a,90y,349.23h,89.5t/data=!3m6!1e1!3m4!1sJcxdZFAXaMwo0HD7_DGIrw!2e0!7i16384!8i8192?entry=ttu",
+          "_blank"
+        );
+      }
+    }
+
+    preloadImages();
+  </script>
+</body>
+
+</html>
